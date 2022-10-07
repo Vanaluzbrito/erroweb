@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+span{
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 1.6rem;
+color: #A71515;
+margin-top: 4.3rem;
+margin-left: 4.3rem;
+
+display: flex;
+align-items: center;
+}
+
+span::before{
+    content: "";
+    width: 1.3rem;
+    height: .3rem;
+    background-color: #A71515;
+  
+}
+
+.container{
+    padding-inline: 3.1rem;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+    gap: 3.0rem;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+h4{
+    display: none;
+}
+
+h2{
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 2.6rem;
+line-height: 3.2rem;
+color: #2F2E41;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #2F2E41;
+
+}
+
+a{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 1.4rem;
+color:white;
+display: block;
+background-color: #2F2E41;
+text-align: center;
+text-decoration: none;
+padding-block: 1rem;
+border-radius: .6rem;
+box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media(min-width:600px) {
+   figure{ 
+    text-align: center;}
+
+}
+
+
+@media(min-width:800px){
+.container{ 
+    flex-direction: row;}
+
+
+.figure{
+    width: 50%;
+}
+
+.conteudo{
+    width: 50%;
+}
+
+span{
+    display: none;
+}
+
+
+h4{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #2F2E41;
+
+}
+
+a{
+    display: inline-block;
+    align-self: flex-start;
+    padding-inline: 4rem;
+}
+
+
+}
+
+@media(min-width:1020){
+
+    .container{
+       position: static;
+       max-width: 83.8rem;
+       margin: 50vh auto;
+
+    }
+
+    .conteudo{
+        justify-content: center;
+        width: 34.8rem;
+    }
+
+    .figure{
+        max-width: 60%;
+    }
+
+
+
+
+
+}
